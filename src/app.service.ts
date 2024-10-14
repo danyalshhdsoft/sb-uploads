@@ -86,6 +86,7 @@ export class AppService {
 
       return { publicUrl, metadata };
     } catch (oError) {
+      console.log('uploadFiles error: ', oError);
       throw new RpcException(oError);
     }
   }
